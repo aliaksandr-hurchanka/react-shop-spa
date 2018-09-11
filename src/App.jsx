@@ -1,14 +1,12 @@
 
 import React from 'react'
 
-const App = props => {
-  return (
-    <main>
-      <section>
-        <h1>React Shop SPA</h1>
-      </section>
-    </main>
-  )
-}
+import Header from './components/Header/index.jsx'
+
+import './theme/globalStyle'
+
+const App = props => [
+  <Header />
+]
 
 export default App
