@@ -1,6 +1,6 @@
 import React from 'react'
 import Header from './components/Header/index.js'
-// import './src/components/global.scss'
+import './common-style/imports.scss'
 
 const App = props => {
   return (
