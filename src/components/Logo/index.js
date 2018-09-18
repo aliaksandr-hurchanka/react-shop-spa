@@ -11,12 +11,8 @@ const Logo = props => {
 }
 
 Logo.propTypes = {
-  linkUrl: PropTypes.string,
+  linkUrl: PropTypes.string.isRequired,
   imageUrl: PropTypes.string.isRequired
-}
-
-Logo.defaultProps = {
-  linkUrl: '#'
 }
 
 export default Logo
