@@ -1,11 +1,12 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import { Link } from 'react-router-dom'
 
 const Logo = props => {
   return (
-    <a className='logo' href={props.linkUrl}>
+    <Link className='logo' to={props.linkUrl}>
       <img src={props.imageUrl} alt='React Shop SPA logo' />
-    </a>
+    </Link>
   )
 }
 

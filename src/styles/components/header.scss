@@ -7,3 +7,11 @@
   border-bottom: 1px solid #4e4e4e;
   @include clearfix;
 }
+
+.page-header__title {
+  width: 500px;
+  margin: 0 auto;
+  font-size: 36px;
+  text-align: center;
+  color: #4e4e4e;
+}

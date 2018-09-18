@@ -8,7 +8,8 @@ module.exports = {
   entry: './src/index.js',
   output: {
     filename: 'bundle.js',
-    path: path.join(__dirname, '/dist')
+    path: path.join(__dirname, '/dist'),
+    publicPath: '/'
   },
 
   module: {
@@ -36,6 +37,7 @@ module.exports = {
     host: 'localhost',
     port: 8080,
     contentBase: path.join(__dirname, '/public'),
-    hot: true
+    hot: true,
+    historyApiFallback: true
   }
 }
