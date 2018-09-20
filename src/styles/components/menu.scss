@@ -1,0 +1,18 @@
+.main-nav {
+  border-bottom: 1px solid #4e4e4e;
+}
+
+.main-nav__list {
+  margin: 0;
+  padding: 10px 0;
+  font-size: 0;
+  list-style: none;
+}
+
+.main-nav__item {
+  display: inline-block;
+  vertical-align: middle;
+  width: 20%;
+  font-size: 18px;
+  text-align: center;
+}
