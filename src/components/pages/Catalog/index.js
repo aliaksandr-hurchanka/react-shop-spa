@@ -1,22 +1,25 @@
 import React from 'react'
-import { Link, Route } from 'react-router-dom'
-import ProductsData from './data/ProductsData.js'
-import Product from './Product'
+import PropTypes from 'prop-types'
+import { Link } from 'react-router-dom'
 
-const Catalog = () => {
+const Catalog = (props) => {
+  console.log('props', props)
   return (
     <div>
-      <div>Catalog</div>
+      <h2 >Catalog</h2>
       <ul>
-        {ProductsData.map(({ title, id }) => (
+        {props.products.map(({ title, id }) => (
           <li key={id}>
             <Link to={`/catalog/${id}`}>{title}</Link>
           </li>
         ))}
       </ul>
-      <Route path={`/catalog/:productId`} component={Product} />
     </div>
   )
+}
+
+Catalog.propTypes = {
+  products: PropTypes.array.isRequired
 }
 
 export default Catalog
