@@ -3,7 +3,6 @@ import PropTypes from 'prop-types'
 import { Link } from 'react-router-dom'
 
 const Catalog = (props) => {
-  console.log('props', props)
   return (
     <div>
       <h2 >Catalog</h2>
